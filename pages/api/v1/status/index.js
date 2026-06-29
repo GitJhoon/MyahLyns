@@ -20,7 +20,8 @@ async function status(request, response) {
       "';",
   );
 
-  const databaseOpenedConnections = databaseOpenedConnectionsResult.rows[0].count;
+  const databaseOpenedConnections =
+    databaseOpenedConnectionsResult.rows[0].count;
 
   return response.status(200).json({
     update_at: updateAt,
