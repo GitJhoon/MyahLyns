@@ -14,6 +14,7 @@ function Home() {
           border-radius: 50%;
           object-fit: cover;
           background: #ccc;
+	  margin-top: -100px;
           margin-bottom: 20px;
         }
         .sobre {
@@ -34,7 +35,7 @@ function Home() {
         a {
           color: inherit;
         }
-        div {
+        .main {
           font-family: Arial, sans-serif;
           text-align: center;
           color: #f5e6d3;
@@ -59,8 +60,15 @@ function Home() {
 	  width: 90vw;
 	  margin: 0 auto;
 	}
+
+	.faixa {
+	  width: 100%;
+	  height: 100px;
+	  background-color: #f5e6d3;
+	}
       `}</style>
-      <div>
+      <div className="main">
+	  <div className="faixa"></div>
         <img
           className="foto-perfil"
           src="/img/myah1.jpeg"
