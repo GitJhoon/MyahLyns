@@ -10,8 +10,8 @@
     "test:watch": "jest --watchAll",
     "services:up": "sudo docker compose -f infra/compose.yaml up -d",
     "services:down": "sudo docker compose -f infra/compose.yaml down",
-    "migration:create": "dotenv -e .env.development node-pg-migrate -m infra/migrations create",
-    "migration:up": "dotenv -e .env.development node-pg-migrate -m infra/migrations up"
+    "migration:create": "dotenv -e .env.development -- node-pg-migrate -m infra/migrations create",
+    "migration:up": "dotenv -e .env.development -- node-pg-migrate -m infra/migrations up"
   },
   "author": "Jonathan",
   "license": "MIT",

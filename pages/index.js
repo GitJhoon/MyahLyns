@@ -1,80 +1,20 @@
+import styles from "./index.module.css";
+import Head from "next/head";
+
 function Home() {
   return (
     <>
-      <style>{`
-        html, body {
-          margin: 0;
-          padding: 0;
-        }
-        .foto-perfil {
-          width: 40vw;
-          max-width: 200px;
-          height: 40vw;
-          max-height: 200px;
-          border-radius: 50%;
-          object-fit: cover;
-          background: #ccc;
-	  margin-top: -100px;
-          margin-bottom: 20px;
-        }
-        .sobre {
-          width: 90vw;
-          max-width: 600px;
-          text-align: center;
-          margin: 0 auto;
-        }
-        .links {
-          display: flex;
-          flex-direction: column;
-          align-items: center;
-          width: 90vw;
-          max-width: 600px;
-          margin: 0 auto;
-          gap: 8px;
-        }
-        a {
-          color: inherit;
-        }
-        .main {
-          font-family: Arial, sans-serif;
-          text-align: center;
-          color: #f5e6d3;
-          background-color: #6b2c39;
-          min-height: 100vh;
-        }
-        section {
-          margin-bottom: 40px;
-        }
-        .icon img {
-          width: 32px;
-          height: 32px;
-          object-fit: contain;
-          margin: 10px;
-        }
-	.links-redes {
-	  display: flex;
-	  flex-direction: row;
-	  flex-wrap: wrap;
-	  justify-content: center;
-	  gap: 12px;
-	  width: 90vw;
-	  margin: 0 auto;
-	}
-
-	.faixa {
-	  width: 100%;
-	  height: 100px;
-	  background-color: #f5e6d3;
-	}
-      `}</style>
-      <div className="main">
-	  <div className="faixa"></div>
+      <Head>
+	  <title>Myah Lyns</title>
+      </Head>
+      <div className={styles.principal}>
+        <div className={styles.faixa}></div>
         <img
-          className="foto-perfil"
+          className={styles.foto_perfil}
           src="/img/myah1.jpeg"
           alt="Foto de perfil"
         />
-        <section className="sobre">
+        <section className={styles.sobre}>
           <h2>Sobre mim: </h2>
           <p>
             Oii, eu sou a Myah, tenho 20 anos e entrei na plataforma pra
@@ -82,23 +22,35 @@ function Home() {
             companhia me chama pra conversar e vamos ver oque rola 🙈♥️
           </p>
         </section>
-        <section>
+        <section className={styles.sessao}>
           <h2>Manda um mimo ai ♥️</h2>
-          <a className="icon" href="https://livepix.gg/ajmcabft" target="_blank">
+          <a
+            className={styles.icon}
+            href="https://livepix.gg/ajmcabft"
+            target="_blank"
+          >
             <img src="/img/livepix-icon.png" alt="Livepix" />
           </a>
-	</section>
-	<h2>Onde me encontrar: </h2>
-	<section className="links-redes">
-          <a className="icon" href="https://www.packzin.com.br/perfil/myahlyns" target="_blank">
+        </section>
+        <h2>Onde me encontrar: </h2>
+        <section className={`${styles.links_redes} ${styles.sessao}`}>
+          <a
+            className={styles.icon}
+            href="https://www.packzin.com.br/perfil/myahlyns"
+            target="_blank"
+          >
             <img src="/img/packzin-icon.png" alt="packzin" />
           </a>
-	  <a className="icon" href="https://cameraprive.com/br/myah-lyns" target="_blank">
-	    <img src="/img/camprive-favicon.png" alt="Camera Prive"/>
-	  </a>
-          <a className="icon" href="http://t.me/myahlyns" target="_blank">
-	    <img src="/img/telegram-favicon.png" alt="Telegram"/>
-	  </a>
+          <a
+            className={styles.icon}
+            href="https://cameraprive.com/br/myah-lyns"
+            target="_blank"
+          >
+            <img src="/img/camprive-favicon.png" alt="Camera Prive" />
+          </a>
+          <a className={styles.icon} href="http://t.me/myahlyns" target="_blank">
+            <img src="/img/telegram-favicon.png" alt="Telegram" />
+          </a>
         </section>
       </div>
     </>
