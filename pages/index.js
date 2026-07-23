@@ -41,6 +41,13 @@ function Home() {
           >
             <img src="/img/packzin-icon.png" alt="packzin" />
           </a>
+	  <a
+	    className={styles.icon}
+	    href="https://www.instagram.com/myahlyns/"
+	    target="_blank"
+	  >
+	    <img src="/img/instagram-icon.png" alt="instagram" />
+	  </a>
           <a
             className={styles.icon}
             href="https://cameraprive.com/br/myah-lyns"
