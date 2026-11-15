@@ -129,9 +129,7 @@ function Home() {
                   </div>
                   <div>
                     <h1 className={styles.nome}>Myah Lyns</h1>
-                    <p className={styles.sub}>
-                      20 anos · Modelo Packzin desde julho de 2025
-                    </p>
+                    <p className={styles.sub}>20 anos</p>
                   </div>
                 </div>
 
@@ -142,14 +140,6 @@ function Home() {
                     me conquistar. Entrei nessa pra conhecer gente nova e viver
                     algo diferente, e adoro criar experiências do jeitinho que
                     você imagina.
-                  </p>
-                </div>
-
-                <div className={styles.aviso}>
-                  <span aria-hidden="true">✦</span>
-                  <p>
-                    <strong>Promoções e conteúdos exclusivos</strong> você só
-                    encontra comigo no chat.
                   </p>
                 </div>
               </section>
