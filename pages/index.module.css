@@ -290,7 +290,7 @@
     font-size: 44px;
   }
   .sub {
-    font-size: 15px;
+    display: none;
   }
   .sobre p {
     font-size: 17px;
